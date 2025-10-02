@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "Black Shirt",
+        "price": "₹450.00",
+        "images": [
+            "./images/shirt/shirt-black.png"
+        ],
+        "category": "shirt",
+        "isTrending": true,
+        "description": "Classic black cotton shirt, perfect for casual and formal occasions.",
+        "sizes": [ "M", "L", "XL"]
+    },
+    {
+        "id": 2,
+        "name": "Light Green Shirt",
+        "price": "₹450.00",
+        "isTrending": true,
+        "images": [
+            "./images/shirt/shirt-lightgreen.png"
+        ],
+        "category": "shirt",
+         "sizes": ["M", "L", "XL"],
+        "description": "Refreshing light green cotton shirt, ideal for summer outings."
+    },
+    {
+        "id": 3,
+        "name": "Gray Shirt",
+        "price": "₹380.00",
+        
+        "isTrending": true,
+        "images": [
+            "./images/shirt/shirt-pattern1-gray.png"
+        ],
+         "sizes": ["M", "L", "XL"],
+
+        "category": "shirt",
+        "description": "White cotton shirt with subtle pattern, stylish for casual wear."
+    },
+    {
+        "id": 4,
+        "name": "Dark Blue Pattern Shirt",
+        "price": "₹350.00",
+        
+        "isTrending": true,
+        "images": [
+            "./images/shirt/shirt-pattern-darkblue.png"
+        ],
+        "category": "shirt",
+         "sizes": ["S", "M", "L", "XL"],
+
+        "description": "Dark blue patterned cotton shirt, perfect for semi-formal events."
+    },
+    {
+        "id": 5,
+        "name": "Sky Blue Shirt",
+        "price": "₹450.00",
+        "isTrending": true,
+        "images": [
+            "./images/shirt/shirt-skyblue.png"
+        ],
+        "category": "shirt",
+         "sizes": ["M", "L", "XL"],
+
+        "description": "Cool sky blue cotton shirt, ideal for daily wear."
+    },
+    {
+        "id": 6,
+        "name": "Brown Shirt",
+        "price": "₹450.00",
+         "sizes": ["M", "L", "XL"],
+
+        "images": [
+            "./images/shirt/shirt-brown.png"
+        ],
+        "category": "shirt",
+        
+        "isTrending": true,
+        "description": "Brown cotton shirt with a relaxed fit, perfect for casual outings."
+    },
+    {
+        "id": 7,
+        "name": "Maroon Shirt",
+         "sizes": ["M", "L", "XL"],
+
+        "price": "₹450.00",
+        
+        "isTrending": true,
+        "images": [
+            "./images/shirt/shirt-merun.png"
+        ],
+        "category": "shirt",
+        "description": "Deep maroon cotton shirt, elegant for evening wear."
+    },
+    {
+        "id": 8,
+        "name": "White Pattern 2 Shirt",
+         "sizes": ["M", "L", "XL"],
+        "price": "₹380.00",
+        "images": [
+            "./images/shirt/shirt-pattern2-white.png"
+        ],
+        "category": "shirt",
+        "description": "White cotton shirt with subtle pattern, stylish for casual wear."
+    },
+    {
+        "id": 9,
+         "sizes": ["S", "M", "L", "XL"],
+        "name": "Orange Pattern Shirt",
+        "price": "₹350.00",
+        "images": [
+            "./images/shirt/shirt-pattern-orange.png"
+        ],
+        "category": "shirt",
+        "description": "Vibrant orange patterned cotton shirt, great for a trendy look."
+    },
+    {
+        "id": 10,
+        "name": "Sky Blue Pattern Shirt",
+         "sizes": ["S", "M", "L", "XL"],
+        "price": "₹350.00",
+        "images": [
+            "./images/shirt/shirt-pattern-skyblue.png"
+        ],
+        "category": "shirt",
+        "description": "Sky blue patterned cotton shirt, perfect for casual and semi-formal wear."
+    },
+    {
+        "id": 11,
+         "sizes": ["M", "L", "XL"],
+        "name": "Light Green Shirt",
+        "price": "₹450.00",
+        "images": [
+            "./images/shirt/shirt-green.png"
+        ],
+        "category": "shirt",
+        "description": "Fresh light green cotton shirt, great for summer and outdoor wear."
+    },
+    {
+        "id": 12,
+         "sizes": ["M", "L", "XL"],
+        "name": "Pale Pink Shirt",
+        "price": "₹450.00",
+        "images": [
+            "./images/shirt/shirt-palepink.png"
+        ],
+        "category": "shirt",
+        "description": "Soft pale pink cotton shirt, elegant for casual or office wear."
+    },
+    {
+        "id": 13,
+         "sizes": ["M", "L", "XL"],
+        "name": "White Pattern 1 Shirt",
+        "price": "₹450.00",
+        "images": [
+            "./images/shirt/shirt-pattern1-white.png"
+        ],
+        "category": "shirt",
+        "description": "White cotton shirt with pattern 3 design, stylish and comfortable."
+    }
+]
+

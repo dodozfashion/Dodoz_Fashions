@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the latest collection of shirts, t-shirts, and sarees at Sosoz Shop. Discover stylish, comfortable, and trendy outfits for men and women. Upgrade your wardrobe with high-quality fashion at affordable prices.">
+
+    <meta name="keywords" content="Sosoz Shop, shirts, t-shirts, sarees, men clothing, women clothing, trendy fashion, stylish outfits, casual wear, ethnic wear, online clothing store">
+ <meta name="author" content="DODOZ_Fashion">
+    <link rel="icon" href="images/logo/logo1-removebg-preview.png" type="image/x-icon">
+        <!-- css -->
+        <link rel="stylesheet" href="Style/products.css">
+        <link rel="stylesheet" href="Style/main.css">
+        <link rel="stylesheet" href="Style/footer.css">
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <!-- icon -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <title>DODOZ</title>
+    </head>
+<body>
+    <header class="container" id="header">
+        <div class="header_top">
+               <div class="header_social">
+                <a href="https://www.instagram.com/dodoz._?igsh=a2s2bXRnYnV1dzdv" target="_blank">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="https://www.facebook.com/share/1CLehT5zg5/" target="_blank">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="https://wa.me/919363487476" target="_blank">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </div>
+              
+              <a href="#">
+                <img src="images/logo/logo1-removebg-preview.png" alt="page logo" id="logo" style="filter: brightness(0.7) drop-shadow(0 4px 6px rgba(0,0,0,0.7));">
+              </a></a>   <!-- <div class="header_actions">
+                <div id="display_login">
+                  <span id="user_name">Amira</span>
+                  <a href="#" id="logout" title="Logout" onclick="logout();">
+                   <ion-icon name="log-out-outline"></ion-icon>
+                  </a>
+                </div>
+                <a href="login.html" title="Login" id="login_btn">
+                 <ion-icon name="person-circle-outline"></ion-icon>
+                </a>
+                <a href="#" class="icon-cart">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span id="cart-counter">0</span>
+                </a>
+           </div> -->
+        </div>
+        <nav>
+
+          
+            <menu>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html"  class="active">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </menu>
+        </nav>
+    </header>
+
+    
+<!-- WhatsApp Order Notice Marquee -->
+<div class="marquee-container">
+  <div class="marquee-content">
+    📢 We're currently accepting orders via WhatsApp only — Thank you for your understanding!
+  </div>
+</div>
+
+<style>
+  .marquee-container {
+    width: 100%;
+    background: linear-gradient(90deg, #075E54 0%, #128C7E 100%);
+    color: #fff;
+    overflow: hidden;
+    padding: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    position: relative;
+  }
+
+  .marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 100%;
+    animation: smooth-marquee 15s linear infinite;
+  }
+
+  @keyframes smooth-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .marquee-content {
+      font-size: 14px;
+      animation-duration: 12s;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .marquee-content {
+      font-size: 13px;
+      animation-duration: 10s;
+    }
+  }
+</style>
+
+    <main>
+
+      
+        <div class="product-header">
+               <div class="menu-icon" onclick="toggleSidebar()">
+                  <ion-icon name="grid-outline"></ion-icon>
+                </div>
+                <div class="product-header-right">
+                   
+                    <span id="productCount"></span>
+                </div>
+        </div>
+        <div class="container">
+            <div class="aside">
+                <h2>Categories</h2>
+                <div class="shop_categories">
+                    <a href="#" class="categories_link" productCategory="" >Show All</a>
+                    <a href="#" class="categories_link" productCategory="shirt" >Shirts</a>
+                    <a href="#" class="categories_link" productCategory="tshirt">T-Shirts</a>
+                    <a href="#" class="categories_link" productCategory="sarees">Saree</a>
+                    <!-- <a href="#" class="categories_link" productCategory="shorts">Shorts</a>
+                    <a href="#" class="categories_link" productCategory="pants">Pants</a>
+                    <a href="#" class="categories_link" productCategory="kurthas">Kurthas</a> -->
+                </div>
+            </div>
+            
+            <div class="products">
+               <div class="content">
+                <!-- add products in js -->
+               </div>
+            </div>
+        </div>
+    </main>
+     
+<!-- WhatsApp Order Notice Marquee -->
+<div class="marquee-container">
+  <div class="marquee-content">
+    📢 We're currently accepting orders via WhatsApp only — Thank you for your understanding!
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-top footer-center">
+    <div class="footer-logo">
+    <a href="#">
+        <img src="images/logo/logo-bg1.png" alt="logo" class="logo-img">
+    </a></a>
+      <p>The customer is at the heart of our unique business model, which includes design.</p>
+      
+      <!-- Social Icons -->
+      <div class="footer-social">
+        <a href="https://www.instagram.com/dodoz._?igsh=a2s2bXRnYnV1dzdv" target="_blank" class="social-icon insta">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://wa.me/919363487476" target="_blank" class="social-icon whatsapp">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <a href="https://www.facebook.com/share/1CLehT5zg5/" target="_blank" class="social-icon fb">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-list">
+      <div class="list">
+        <h4>Contact & Address</h4>
+        <ul>
+            <li>
+                <a href="https://maps.app.goo.gl/XkxY59Gx8wd6N8rM9" target="_blank">
+                    <i class="fas fa-building"></i> Complex123, Elampillai, Salem - 637502
+                </a>
+            </li>
+            <li>
+                <a href="https://www.google.com/maps/search/?api=1&query=Tamil+Nadu,+India" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> Tamil Nadu, India
+                </a>
+            </li>
+            <li>
+                <a href="tel:+919363487476">
+                    <i class="fas fa-phone"></i> +91 919363487476
+                </a>
+            </li>
+            <li>
+                <a href="mailto:dodozfashion@gmail.com">
+                    <i class="fas fa-envelope"></i> dodozfashion@gmail.com
+                                </a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p class="footer-company-name">
+      © 2025 All rights reserved. Made with <ion-icon name="heart"></ion-icon> by 
+      <a href="#" id="author">DODOZ</a>
+    </p>
+  </div>
+</footer>
+
+
+    <button id="scrollBtn"><ion-icon name="arrow-up-outline" id="btn-up"></ion-icon></button>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/cart.js"></script>
+    <script src="JavaScript/getData.js"></script>
+</body>
+</html>

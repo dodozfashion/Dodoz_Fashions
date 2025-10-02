@@ -1,0 +1,338 @@
+main{
+    padding:4%;
+}
+.product-header{
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-header .menu-icon::after {
+        content: "Category";
+        font-weight: 600;
+        font-size: 14px;
+        color: #333;
+        margin-left: 8px;
+    }
+}
+.header_social ion-icon:hover {
+    color: #c7005d;
+}
+.product-header .menu-icon{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    visibility:hidden;
+}
+.product-header-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-header-right span{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 4px;
+}
+.product-header-right #sort{   
+    border-radius: 0;
+    min-width: auto;
+    min-height: auto;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    padding: 12px;
+    color: #000;
+}
+#productCount{
+    margin-left: 6px;
+}
+main .container{
+    position: relative;
+}
+.aside {
+    width: 250px;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 60px 30px;
+    z-index: 1;
+}
+
+/* Optional: Adjust height for smaller screens */
+@media (max-width: 425px) {
+    .aside {
+        height: 500px;        /* Let it adjust automatically on mobile */
+        padding: 40px 20px;  /* Optional: reduce padding for mobile */
+    }
+}
+.aside h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 8px;
+}
+.shop_categories a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.shop_categories a.active,
+.shop_categories a:hover {
+    color: #333333;
+}
+
+/*---------------- products ---------------------*/
+.products{
+    margin-left: 0;
+    padding: 16px;
+    flex-grow: 1;
+    transition: margin-left 0.5s;
+    width: 100%;
+    padding-left: 270px;
+}
+.products .content{
+    display: grid;
+    gap: 20px;
+    padding: 16px;
+}
+
+.product-card {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card-img{
+    position: relative;
+    overflow: hidden;
+}
+.card-img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;       /* Ensures images don’t overflow the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;         /* Center the image container */
+    border-radius: 8px;     /* optional for rounded corners */
+
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* Fill the container without distortion */
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;     /* optional for rounded corners */
+}
+
+/* Responsive for mobile devices */
+@media (max-width: 768px) {
+    .card-img {
+        width: 160px;
+        height: 200px;
+    border-radius: 8px;      /* optional for rounded corners */
+
+    }
+}
+
+
+.card-img:hover img {
+    transform: scale(1.1);
+    
+}
+.card-img .addToCart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    transition: all .4s;
+}
+.card-img .addToCart:hover{
+    background-color: #000000dc;
+    color: #fff;
+}
+.card-info {
+    padding: 16px 0;
+}
+
+.product-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #222;
+    margin: 0 0 8px;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight:400 ;
+    color: #696969;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .product-header .menu-icon{
+        visibility: visible;
+    }
+    .sortBy{
+        display: none;
+    }
+    .aside {
+        width: 100%;
+        left: -200%;
+    }
+    .aside.open {
+        left: 0;
+    }
+    .products {
+        padding-left: 16px;
+    }
+}
+
+
+/* /css for no card container */
+
+
+.no-products-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Message box */
+.no-products-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    max-width: 500px; /* ✅ Limits width */
+    width: 100%;
+    padding: 40px 20px;
+    margin: 0 auto; /* ✅ Centers horizontally */
+    animation: fadeUp 0.8s ease-out;
+}
+
+.no-products-message h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    animation: bounceText 2s infinite;
+}
+
+.no-products-message p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 400px;
+    line-height: 1.5;
+    animation: fadeIn 1.5s ease-in;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounceText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* ✅ Mobile view adjustments */
+@media (max-width: 600px) {
+    .no-products-wrapper {
+        padding: 15px;
+        min-height: 250px;
+    }
+
+    .no-products-message {
+        padding: 25px 15px;
+        max-width: 90%; /* ✅ Keeps it centered with some side spacing */
+        border-radius: 12px;
+    }
+
+    .no-products-message h3 {
+        font-size: 1.4rem;
+    }
+
+    .no-products-message p {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+}
+
+
+.no-products-wrapper {
+    position: relative;       /* so it can move independently */
+    width: 60vw;             /* full viewport width */
+    max-width: 100%;          /* ensure no limit from parent */
+    left: 50%;                /* center properly */
+    transform: translateX(-50%);
+    margin: 20px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;     /* in case other containers overlap */
+}
+
+/* Mobile-specific tweak */
+@media (max-width: 768px) {
+    .no-products-wrapper {
+        padding: 20px;
+    }
+}
+
+/* Animations remain the same */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,198 @@
+
+    .footer-logo img.logo-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;       /* increase the width */
+    height: auto;       /* auto to maintain aspect ratio */
+    object-fit: contain; 
+    background: transparent; 
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3)); /* optional glow */
+}
+
+.footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.footer a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Centered stacked layout */
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Space between logo and address */
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Optional: subtle shadow or glow for better visibility */
+.footer-logo img.logo-img {
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.footer-list .list h4 {
+    font-size: 1.2rem;
+    color: #ff4081;
+    margin-bottom: 10px;
+}
+
+.footer-list .list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-list .list ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.footer-bottom ion-icon {
+    color: red;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    .footer-center {
+        gap: 20px;
+    }
+}
+
+
+.footer-social {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    color: #fff; /* icon color will be overridden */
+    font-size: 20px;
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* Individual Icon Colors */
+.footer-social a.insta {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #fff;
+}
+
+.footer-social a.whatsapp {
+    background-color: #25D366;
+}
+
+.footer-social a.fb {
+    background-color: #1877F2;
+}
+
+/* Optional: Smooth icon hover effect */
+.footer-social a ion-icon {
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover ion-icon {
+    transform: scale(1.2);
+}
+
+
+
+
+
+.footer-social a.insta {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.footer-social a.whatsapp {
+    background-color: #25D366;
+}
+
+.footer-social a.fb {
+    background-color: #1877F2;
+}
+
+.footer-social a:hover {
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+
+.footer-list h4 {
+    color: #ff4081;
+    margin-bottom: 15px;
+}
+
+
+
+.footer-list ul li i {
+    color: #ff4081; /* icon color */
+  
+}
+
+.footer-list ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-list ul li a:hover {
+    color: #ff79a3; /* lighter pink hover */
+}
+
+/* Footer Bottom */
+
+
+.footer-bottom a:hover {
+    color: #ff79a3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-list {
+        text-align: center;
+    }
+}
