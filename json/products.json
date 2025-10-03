@@ -37,7 +37,7 @@
 
         "category": "shirt",
         "description": "White cotton shirt with subtle pattern, stylish for casual wear." ,
-        "handType": "FS"  
+        "handType": "HS"  
     },
     {
         "id": 4,
@@ -108,7 +108,7 @@
         ],
         "category": "shirt",
         "description": "White cotton shirt with subtle pattern, stylish for casual wear.",
-        "handType": "FS"  
+        "handType": "HS"  
     },
     {
         "id": 9,
@@ -132,7 +132,7 @@
         ],
         "category": "shirt",
         "description": "Sky blue patterned cotton shirt, perfect for casual and semi-formal wear.",
-        "handType": "FS"  
+        "handType": "HS"  
     },
     {
         "id": 11,
@@ -171,6 +171,7 @@
         "handType": "FS"  
     }
 ]
+
 
 
 
