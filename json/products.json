@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Black Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         "images": [
             "./images/shirt/shirt-black.png"
         ],
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "name": "Light Green Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         "isTrending": true,
         "images": [
             "./images/shirt/shirt-lightgreen.png"
@@ -26,7 +26,7 @@
     {
         "id": 3,
         "name": "Gray Shirt",
-        "price": "₹380.00",
+        "price": "₹  380.00",
         
         "isTrending": true,
         "images": [
@@ -40,7 +40,7 @@
     {
         "id": 4,
         "name": "Dark Blue Pattern Shirt",
-        "price": "₹350.00",
+        "price": "₹ 350.00",
         
         "isTrending": true,
         "images": [
@@ -54,7 +54,7 @@
     {
         "id": 5,
         "name": "Sky Blue Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         "isTrending": true,
         "images": [
             "./images/shirt/shirt-skyblue.png"
@@ -67,7 +67,7 @@
     {
         "id": 6,
         "name": "Brown Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
          "sizes": ["M", "L", "XL"],
 
         "images": [
@@ -83,7 +83,7 @@
         "name": "Maroon Shirt",
          "sizes": ["M", "L", "XL"],
 
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         
         "isTrending": true,
         "images": [
@@ -96,7 +96,7 @@
         "id": 8,
         "name": "White Pattern 2 Shirt",
          "sizes": ["M", "L", "XL"],
-        "price": "₹380.00",
+        "price": "₹ 380.00",
         "images": [
             "./images/shirt/shirt-pattern2-white.png"
         ],
@@ -107,7 +107,7 @@
         "id": 9,
          "sizes": ["S", "M", "L", "XL"],
         "name": "Orange Pattern Shirt",
-        "price": "₹350.00",
+        "price": "₹ 350.00",
         "images": [
             "./images/shirt/shirt-pattern-orange.png"
         ],
@@ -118,7 +118,7 @@
         "id": 10,
         "name": "Sky Blue Pattern Shirt",
          "sizes": [ "M", "L", "XL"],
-        "price": "₹350.00",
+        "price": "₹ 350.00",
         "images": [
             "./images/shirt/shirt-pattern-skyblue.png"
         ],
@@ -129,7 +129,7 @@
         "id": 11,
          "sizes": ["M", "L", "XL"],
         "name": "Light Green Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         "images": [
             "./images/shirt/shirt-green.png"
         ],
@@ -140,7 +140,7 @@
         "id": 12,
          "sizes": ["M", "L", "XL"],
         "name": "Pale Pink Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         "images": [
             "./images/shirt/shirt-palepink.png"
         ],
@@ -151,7 +151,7 @@
         "id": 13,
          "sizes": ["M", "L", "XL"],
         "name": "White Pattern 1 Shirt",
-        "price": "₹450.00",
+        "price": "₹ 450.00",
         "images": [
             "./images/shirt/shirt-pattern1-white.png"
         ],
@@ -159,5 +159,6 @@
         "description": "White cotton shirt with pattern 3 design, stylish and comfortable."
     }
 ]
+
 
 
