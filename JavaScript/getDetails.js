@@ -4,6 +4,7 @@ let quantity = document.getElementById("productCount");
 
 getData();
 
+
 async function getData(){
     try {
         let response = await fetch('json/products.json');
@@ -97,3 +98,39 @@ document.getElementById("plus").addEventListener("click", function() {
       quantity.value = value + 1;
     }
 });
+
+function displayDetails(product){
+    let productDetails = document.getElementsByClassName('productDetails')[0];
+    productDetails.setAttribute("data-id",product.id);
+
+    document.getElementById("product_image").src = product.images[0];
+    document.getElementById("product_image").alt = product.name;
+    document.querySelector(".category_name").innerHTML = product.category;
+    document.querySelector(".product_name").innerHTML = product.name;
+    document.querySelector(".product_price").innerHTML = product.price;
+    document.querySelector(".product_des").innerHTML = product.description;
+
+    // 🆕 Display Hand Type
+    const handTypeElement = document.querySelector(".product_handType");
+    if (handTypeElement) {
+        handTypeElement.innerHTML = product.handType === "FS" ? "Full Sleeve" :
+                                    product.handType === "HS" ? "Half Sleeve" : "N/A";
+    }
+
+    // Display sizes
+    const sizeContainer = document.getElementById("sizeOptions");
+    sizeContainer.innerHTML = "";
+    if(product.sizes && product.sizes.length > 0){
+        product.sizes.forEach(size => {
+            const btn = document.createElement("button");
+            btn.classList.add("size-btn");
+            btn.innerText = size;
+            btn.addEventListener("click", () => {
+                document.querySelectorAll(".size-btn").forEach(b => b.classList.remove("selected"));
+                btn.classList.add("selected");
+            });
+            sizeContainer.appendChild(btn);
+        });
+    }
+}
+
