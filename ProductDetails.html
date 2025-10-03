@@ -258,10 +258,23 @@
       height: 16px;
     }
   }
+
+
+
+.product_handType {
+    display: inline-block;
+    padding: 4px 10px;
+    background: linear-gradient(135deg, #444, #222);
+    color: #fff;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
 </style>
-
-
-
   
  <div class="container">
   <div class="productDetails">
@@ -271,13 +284,18 @@
     <div class="details">
       <span class="category_name">Men's Wear</span>
       <h2 class="product_name">Stylish T-Shirt</h2>
+      <p style="margin: 10px;"><strong>Sleeve :</strong> <span class="product_handType"></span></p>
+
+
       <h3 class="product_price">₹1200.00</h3>
-      <p class="product_des">High-quality cotton T-shirt, comfortable and trendy for daily wear.</p>
+      <p class="product_des" >High-quality cotton T-shirt, comfortable and trendy for daily wear.</p>
       
       <div class="product_sizes">
   <h4>Select Size:</h4>
   <div id="sizeOptions" class="sizes-container"></div>
 </div>
+
+
 
     <!-- Quantity -->
       <div class="quantity-container">
@@ -484,7 +502,6 @@ document.addEventListener("keydown", (e) => {
 <script>
 
 // Whatsapp Order sending details
-
 document.addEventListener("DOMContentLoaded", () => {
   const whatsappBtn = document.getElementById("btn_whatsapp");
   const quantityInput = document.getElementById("productCount");
@@ -500,15 +517,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const selectedSizeBtn = document.querySelector(".size-btn.selected");
     const selectedSize = selectedSizeBtn ? selectedSizeBtn.innerText : null;
 
+    // Sleeve (hand type) info
+    const sleeveTypeElement = document.querySelector(".product_handType");
+    const sleeveType = sleeveTypeElement ? sleeveTypeElement.innerText : "Not Specified";
 
-
-    // FOR REQUIRED SIZE SELECTION ALERT
-    
-
-    //if(!selectedSize){
-    //  alert("Please select a size before ordering!");
-    // return;
-    //} 
+    // ✅ Required size selection check (optional)
+    // if (!selectedSize) {
+    //   alert("Please select a size before ordering!");
+    //   return;
+    // }
 
     // Get quantity
     const quantity = parseInt(quantityInput.value) || 1;
@@ -516,8 +533,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Your WhatsApp number (with country code)
     let phoneNumber = "919385537652"; // Replace with your number
 
-    // WhatsApp message with selected size and quantity
-    let message = `Hello, I would like to order:\n\n${productName}\nSize: ${selectedSize}\nQuantity: ${quantity}\nPrice: ${productPrice}\nDescription: ${productDes}\n\nImage: ${productImage}`;
+    // WhatsApp message including sleeve type
+    let message = `Hello, I would like to order:\n\n🧾 *${productName}*\n👕 Size: ${selectedSize || "Not Selected"}\n✂️ Sleeve Type: ${sleeveType}\n🔢 Quantity: ${quantity}\n💰 Price: ${productPrice}\n📝 Description: ${productDes}\n📸 Image: ${productImage}`;
 
     // Open WhatsApp chat
     let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
