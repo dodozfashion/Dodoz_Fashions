@@ -117,7 +117,7 @@
     {
         "id": 10,
         "name": "Sky Blue Pattern Shirt",
-         "sizes": ["S", "M", "L", "XL"],
+         "sizes": [ "M", "L", "XL"],
         "price": "₹350.00",
         "images": [
             "./images/shirt/shirt-pattern-skyblue.png"
@@ -159,4 +159,5 @@
         "description": "White cotton shirt with pattern 3 design, stylish and comfortable."
     }
 ]
+
 
