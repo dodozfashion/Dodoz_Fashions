@@ -8,8 +8,9 @@
         ],
         "category": "shirt",
         "isTrending": true,
-        "description": "Classic black cotton shirt, perfect for casual and formal occasions.",
-        "sizes": [ "M", "L", "XL"]
+        "description": "Classic black corduroy fabric shirt, perfect for casual and formal occasions.",
+        "sizes": [ "M", "L", "XL"],
+        "handType": "FS"  
     },
     {
         "id": 2,
@@ -17,11 +18,11 @@
         "price": "₹ 450.00",
         "isTrending": true,
         "images": [
-            "./images/shirt/shirt-lightgreen.png"
-        ],
+            "./images/shirt/shirt-lightgreen.png"],
+        "handType": "HS",
         "category": "shirt",
          "sizes": ["M", "L", "XL"],
-        "description": "Refreshing light green cotton shirt, ideal for summer outings."
+        "description": "Refreshing light green corduroy fabric shirt, ideal for summer outings."
     },
     {
         "id": 3,
@@ -62,7 +63,7 @@
         "category": "shirt",
          "sizes": ["M", "L", "XL"],
 
-        "description": "Cool sky blue cotton shirt, ideal for daily wear."
+        "description": "Cool sky blue corduroy fabric shirt, ideal for daily wear."
     },
     {
         "id": 6,
@@ -76,7 +77,7 @@
         "category": "shirt",
         
         "isTrending": true,
-        "description": "Brown cotton shirt with a relaxed fit, perfect for casual outings."
+        "description": "Brown corduroy fabric shirt with a relaxed fit, perfect for casual outings."
     },
     {
         "id": 7,
@@ -90,7 +91,7 @@
             "./images/shirt/shirt-merun.png"
         ],
         "category": "shirt",
-        "description": "Deep maroon cotton shirt, elegant for evening wear."
+        "description": "Deep maroon corduroy fabric shirt, elegant for evening wear."
     },
     {
         "id": 8,
@@ -134,7 +135,7 @@
             "./images/shirt/shirt-green.png"
         ],
         "category": "shirt",
-        "description": "Fresh light green cotton shirt, great for summer and outdoor wear."
+        "description": "Fresh light green corduroy fabric shirt, great for summer and outdoor wear."
     },
     {
         "id": 12,
@@ -145,7 +146,7 @@
             "./images/shirt/shirt-palepink.png"
         ],
         "category": "shirt",
-        "description": "Soft pale pink cotton shirt, elegant for casual or office wear."
+        "description": "Soft pale pink corduroy fabric shirt, elegant for casual or office wear."
     },
     {
         "id": 13,
@@ -156,7 +157,7 @@
             "./images/shirt/shirt-pattern1-white.png"
         ],
         "category": "shirt",
-        "description": "White cotton shirt with pattern 3 design, stylish and comfortable."
+        "description": "White corduroy fabric shirt with pattern 3 design, stylish and comfortable."
     }
 ]
 
